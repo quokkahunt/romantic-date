@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="theme-color" content="#ff4f87">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Plan Our Date ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="css/animations.css">
+
+<link rel="stylesheet"
+href="css/responsive.css">
+
+</head>
+
+<body>
+
+<div id="welcomeScreen" class="welcome-screen">
+
+    <div class="welcome-card">
+
+        <h1>
+            🌸 Will you go on a date with me? 🌸
+        </h1>
+
+        <button id="yesBtn">
+            YES ❤️
+        </button>
+
+    </div>
+
+</div>
+
+<div class="background"></div>
+
+<div class="overlay"></div>
+
+<div class="floating-hearts"></div>
+
+<div class="container">
+
+<div class="glass-card">
+
+    <div class="progress-bar">
+
+        <div class="progress-fill"></div>
+
+    </div>
+
+    <div class="step-counter">
+
+        <div class="circle active">1</div>
+
+        <div class="line"></div>
+
+        <div class="circle">2</div>
+
+        <div class="line"></div>
+
+        <div class="circle">3</div>
+
+        <div class="line"></div>
+
+        <div class="circle">4</div>
+
+    </div>
+
+<div id="stepContainer">
+
+    <!-- STEP 1 -->
+
+    <section class="step active-step" id="step1">
+
+        <div class="icon">📅</div>
+
+        <h1>So.. When are you free? 🤓</h1>
+
+        <p>Pick a Date</p>
+
+        <input type="date" id="datePicker">
+
+        <div class="photo-upload">
+
+    <label for="photoInput" class="upload-box">
+
+        <img id="previewImage"
+             src="https://placehold.co/220x220/png?text=Upload+Photo"
+             alt="Preview">
+
+        <span>📷 Can You Upload Our Couple Photo Please 🥰</span>
+
+    </label>
+
+    <input
+        type="file"
+        id="photoInput"
+        accept="image/*"
+        hidden>
+
+</div>
+
+        <div class="btn-group">
+
+            <button id="nextBtn">
+
+                Next
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- STEP 2 -->
+
+    <section class="step" id="step2">
+
+        <div class="icon">⏰</div>
+
+        <h1>Select Your Free Time Please 😙 </h1>
+
+        <p>When should we meet? 🤔</p>
+
+        <div class="time-grid">
+
+            <div class="time-card">🌅 Morning</div>
+
+            <div class="time-card">🍽 Lunch</div>
+
+            <div class="time-card">🌇 Evening</div>
+
+            <div class="time-card">🍷 Dinner</div>
+
+        </div>
+
+        <div class="btn-group">
+
+            <button class="backBtn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back
+
+            </button>
+
+            <button id="timeNext">
+
+                Next
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- STEP 3 -->
+
+<section class="step" id="step3">
+
+    <div class="icon">🍽️</div>
+
+    <h1>What are we feeling? <br>👀</h1>
+
+
+    <div class="food-grid">
+
+        <div class="food-card">🍕 Pizza</div>
+        <div class="food-card">🍔 Burger</div>
+        <div class="food-card">🍝 Pasta</div>
+        <div class="food-card">🍗 Fried Chicken</div>
+
+        <div class="food-card">🍣 Sushi</div>
+        <div class="food-card">🦞 Seafood</div>
+        <div class="food-card">🍛 Biriyani</div>
+        <div class="food-card">🥣 Khichuri</div>
+
+        <div class="food-card">🍜 Noodles</div>
+        <div class="food-card">☕ Coffee</div>
+        <div class="food-card">🍦 Ice Cream</div>
+        <div class="food-card">🎁 Surprise Me</div>
+
+    </div>
+
+    <div class="custom-food">
+
+        <label>Other Food</label>
+
+        <input
+        type="text"
+        id="customFood"
+        placeholder="Write your favorite food...">
+
+    </div>
+
+    <div class="btn-group">
+
+        <button id="foodBack">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back
+
+        </button>
+
+        <button id="foodNext">
+
+            Next
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- STEP 4 -->
+
+<section class="step" id="step4">
+
+    <div class="icon">📍</div>
+
+    <h1>Where You'd Like to Make Memories?</h1>
+
+
+    <div class="place-box">
+
+        <input
+            type="text"
+            id="placeInput"
+            placeholder="Type your favorite place...">
+
+    </div>
+
+    <div class="btn-group">
+
+        <button id="placeBack">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back
+
+        </button>
+
+        <button id="placeNext">
+
+            Finish
+
+            <i class="fa-solid fa-heart"></i>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- STEP 5 -->
+
+<section class="step" id="step5">
+
+    <div class="final-card">
+
+        <div class="success-icon">
+            ❤️
+        </div>
+
+        <h1>YAY!!!!</h1>
+
+        <p class="subtitle">
+            Can't Wait To See You ❤️
+        </p>
+
+        <div class="summary">
+
+            <div class="summary-item">
+                <span>📅 Date</span>
+                <strong id="finalDate"></strong>
+            </div>
+
+            <div class="summary-item">
+                <span>🕒 Time</span>
+                <strong id="finalTime"></strong>
+            </div>
+
+            <div class="summary-item">
+                <span>🍽 Food</span>
+                <strong id="finalFood"></strong>
+            </div>
+
+            <div class="summary-item">
+                <span>📍 Place</span>
+                <strong id="finalPlace"></strong>
+            </div>
+
+        </div>
+
+        <div class="love-message">
+
+            💖 I Can't Wait To Spend This Beautiful Day With You 💖
+
+        </div>
+
+        <button id="celebrateBtn">
+
+            Yay! I'm Excited ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="downloadCard" class="download-card">
+
+    <div class="download-header">
+        YAY!!!!<br>💖 I Can't Wait To Spend This Beautiful Day With You 💖
+    </div>
+
+    <div class="download-photo">
+
+        <img
+        id="downloadPhoto"
+        src="images/couple.png"
+        alt="Couple">
+
+    </div>
+
+    <div class="download-content">
+
+        <div class="row">
+            <span>📅 Date</span>
+            <strong id="cardDate"></strong>
+        </div>
+
+        <div class="row">
+            <span>🕒 Time</span>
+            <strong id="cardTime"></strong>
+        </div>
+
+        <div class="row">
+            <span>🍽 Food</span>
+            <strong id="cardFood"></strong>
+        </div>
+
+        <div class="row">
+            <span>📍 Place</span>
+            <strong id="cardPlace"></strong>
+        </div>
+
+    </div>
+
+    <p class="download-message">
+
+        Every love story is beautiful, <br> but ours is my favorite ❤️
+
+    </p><br>
+
+    <div class="footer">
+
+        Made With ❤️ <!-- <br> ❤️ Made By Abrar ❤️ -->
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
